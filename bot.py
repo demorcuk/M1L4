@@ -60,4 +60,9 @@ async def roll(ctx, dice: str):
 async def heh(ctx, count_heh = 5):
     await ctx.send("he" * count_heh)
 
+
+@bot.command()
+async def umut(ctx):
+    await ctx.send(f'Merhaba! Ben {bot.user}, bir Discord sohbet botuyum!')
+
 bot.run(TOKEN)
